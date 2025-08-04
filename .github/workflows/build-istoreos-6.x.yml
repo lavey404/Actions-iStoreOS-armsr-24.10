@@ -8,8 +8,8 @@ on:
         # description: 'SSH connection to Actions'
         # required: false
         # default: 'false'
-  schedule:
-   - cron: 0 16 * * *
+  #schedule:
+  # - cron: 0 16 * * *
 
 env:
   REPO_URL: https://github.com/istoreos/istoreos
@@ -188,7 +188,7 @@ jobs:
       id: tag
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
-        echo "release_tag=$(date +"%Y.%m.%d-%H.%M")-${{ matrix.ARCHITECTURE }}" >> ${GITHUB_OUTPUT}
+        echo "release_tag=$(date +"%Y.%m.%d")-${{ matrix.ARCHITECTURE }}" >> ${GITHUB_OUTPUT}
         touch release.txt
         echo "
         💻 架构: ${{ matrix.ARCHITECTURE }}
