@@ -23,9 +23,10 @@ chmod 755 package/base-files/files/bin/coremark
 chmod 755 package/base-files/files/bin/coremark.sh
 
 
-# 复制 Orange pi 5 Plus dts设备树文件到指定目录下
-cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3588-orangepi-5-plus.dts target/linux/rockchip/dts/rk3588/rk3588-orangepi-5-plus.dts
-
-
 # 定时限速插件
 git clone --depth=1 https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
+
+# Add luci-app-amlogic
+rm -rf package/luci-app-amlogic
+git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
+
