@@ -1,6 +1,6 @@
 # iStore OS armv8 rootfs | 定制的麻烦自行 fork 修改
 
-[![iStore使用文档](https://img.shields.io/badge/使用文档-iStore%20OS-brightgreen?style=flat-square)](https://doc.linkease.com/zh/guide/istoreos) [![最新rootfs下载](https://img.shields.io/github.com/lavey404/Actions-iStoreOS-armsr-24.10?style=flat-square&label=最新rootfs下载)](../../releases/latest)
+[![iStore使用文档](https://img.shields.io/badge/使用文档-iStore%20OS-brightgreen?style=flat-square)](https://doc.linkease.com/zh/guide/istoreos) [![最新rootfs下载](https://img.shields.io/github/v/release/lavey404/Actions-iStoreOS-armsr-24.10?style=flat-square&label=最新rootfs下载)](../../releases/latest)
 
 
 ## 默认配置
