@@ -52,7 +52,7 @@ git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-turboacc
 # 科学上网插件
 git clone https://github.com/xiaorouji/openwrt-passwall-packages package/passwall-packages
 git clone https://github.com/xiaorouji/openwrt-passwall package/passwall
-git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
+#git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-homeproxy
 
 
