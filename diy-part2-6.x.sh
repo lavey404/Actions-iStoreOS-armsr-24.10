@@ -40,6 +40,15 @@ function git_sparse_clone() {
   cd .. && rm -rf $repodir
 }
 
+# Set Rust build arg llvm.download-ci-llvm to false.
+RUST_MAKEFILE="feeds/packages/lang/rust/Makefile"
+if [[ -f "${RUST_MAKEFILE}" ]]; then
+  printf "Modifying %s...\n" "${RUST_MAKEFILE}"
+  sed -i 's/--set=llvm\.download-ci-llvm=true/--set=llvm.download-ci-llvm=false/' "${RUST_MAKEFILE}"
+else
+  echo "File ${RUST_MAKEFILE} does not exist." >&2
+fi
+
 # 更新 golang 1.24 版本
 #rm -rf feeds/packages/lang/golang
 #git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
