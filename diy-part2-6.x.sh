@@ -62,6 +62,6 @@ rm -rf feeds/packages/net/{xray-core,v2ray-core,v2ray-geodata,sing-box}
 git clone https://github.com/xiaorouji/openwrt-passwall-packages package/passwall-packages
 git clone https://github.com/xiaorouji/openwrt-passwall package/passwall
 #git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
-git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-homeproxy
+#git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-homeproxy
 
 
